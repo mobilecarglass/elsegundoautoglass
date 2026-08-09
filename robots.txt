@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elsegundoautoglass.com/sitemap.xml
