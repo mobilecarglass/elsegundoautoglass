@@ -65,3 +65,57 @@ h1,h2,h3,h4{line-height:1.1;letter-spacing:-.025em}h1,h2,h3{margin-top:0}
 .site-footer{background:#090a0c;color:#b7bdc4;padding:58px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:38px}.footer-brand h3{color:#fff;font-size:22px;margin:0 0 10px}.site-footer h4{color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.1em;margin:0 0 15px}.footer-links{display:grid;gap:9px;font-size:14px}.footer-links a:hover{color:#fff}.footer-address{font-size:14px;line-height:1.7}.footer-phone{display:inline-block;color:#fff;font-size:19px;font-weight:900;margin-top:12px}.footer-bottom{border-top:1px solid #292c30;margin-top:38px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
 @media(max-width:720px){.footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
 .notfound{text-align:center;padding:110px 0}.notfound h1{font-size:100px;margin:0;color:var(--red)}.notfound p{color:var(--muted);font-size:18px}
+
+
+/* Embedded universal auto glass quote form */
+.contact-grid > * {
+  min-width: 0;
+}
+
+.quote-form-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.quote-form-card .quote-form-intro {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.quote-iframe-wrap {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.quote-iframe-wrap iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 1550px;
+  border: 0;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .quote-form-card {
+    padding: 24px;
+  }
+
+  .quote-iframe-wrap iframe {
+    height: 1600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-form-card {
+    padding: 18px;
+  }
+
+  .quote-iframe-wrap iframe {
+    height: 1680px;
+  }
+}
